@@ -2,8 +2,7 @@ var completed = document.getElementById("completed");
 var forfeit = document.getElementById("forfeit");
 var reset = document.getElementById("reset");
 var sentence = document.getElementById("sentence");
-var about = document.querySelectorAll(".navbar ul li");
-
+var navbar = document.querySelectorAll(".navbar ul li");
     //define the string
 var string = ""
 //define the noun pool
@@ -40,13 +39,13 @@ var prepositions = [
     'on', 'with', 'on top of', 'inside of', 'around', 'underneath', 'outside of', 'through', 'next to', 'over', 'aboard', 'onto', 'above', 'under', 'among', 'to', 'toward', 'at', 'behind', 'below', 'beneath', 'beside', 'while watching', 'in', 'into', 'near', 'off', 'outside', 'over', 'while eating', 'while holding', 'while wearing', 'while pretending to be', 'with your hand in', 'while fearing', 'while talking about', 'while singing about', 'at', 'at', 'while yelling at', 'while yelling about', 'while staring at', 'while thinking about']
 ////////////////////////////////
 
+navbar[0].addEventListener("click", showAbout)
+navbar[1].addEventListener("click", customize)
+navbar[2].addEventListener("click", showRules)
 
 completed.addEventListener("click", newString);
 
 reset.addEventListener("click", newString);
-
-
-
 
 function newString() { 
     //generate new strings
@@ -67,3 +66,17 @@ function stringGenerator(){
    string = verbs[v] + " " + nouns[n1] + " " + prepositions[pp] + " " + nouns2[n2] + " " + descriptor[d];
 }
 
+function showAbout() {
+    alert("working");
+    //Show the About Page
+}
+function customize() {
+    alert("working");
+    //shows a div in a higher Z axis, that lets the user 
+    //define player 1
+    //define player 2
+}
+function showRules() {
+    alert("working");
+    //Show the Rules Page
+}
