@@ -5,6 +5,7 @@ var sentence = document.getElementById("sentence");
 
 completed.addEventListener("click", newString);
 var string = ""
+//define the noun pool
 var nouns = [
     "house",
     "movie",
@@ -18,12 +19,13 @@ var nouns = [
 var pronouns = [
     "my", 
     "your",
-    "player 1",
-    "player two",
-    "player three",
+    "player 1's",
+    "player 2's",
+    "player 3's",
     "everyone's"
 ]
 
+//def. verb pool
 var verbs = [
     "brings", 
     "leaves", 
@@ -32,15 +34,31 @@ var verbs = [
     "hates",
     "fucks"
 ]
+
+// def article pool
+var articles = [
+    "the",
+    "a", //avoid using any noun starting with a vowel
+    "my",
+    "player 2's"
+]
 function newString() {  
+    stringGenerator();
+    sentence.textContent = string;
+    //define the string
 
 
-//define the string
-
-//define the noun pool
-
-//def. verb pool
 //generate new strings
 //replace the text on the website
 }
-    
+
+
+function stringGenerator(){
+    var p = Math.floor(Math.random()*pronouns.length);
+    var v = Math.floor(Math.random()*verbs.length);
+    var n1 = Math.floor(Math.random()*nouns.length);
+    var n2 = Math.floor(Math.random()*nouns.length);
+    var a = Math.floor(Math.random()*articles.length);
+   string = pronouns[p] + " " + nouns[n1] + " " + verbs[v] + " " + articles[a] + " " + nouns[n2];
+    // string = n + " " + v + " " + n
+}
