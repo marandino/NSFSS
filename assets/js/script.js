@@ -4,6 +4,7 @@ var sentence = document.getElementById("sentence");
 // var string = sentence.textContent;
 
 completed.addEventListener("click", newString);
+    //define the string
 var string = ""
 //define the noun pool
 var nouns = [
@@ -34,7 +35,6 @@ var verbs = [
     "hates",
     "fucks"
 ]
-
 // def article pool
 var articles = [
     "the",
@@ -42,14 +42,11 @@ var articles = [
     "my",
     "player 2's"
 ]
-function newString() {  
+function newString() { 
+    //generate new strings
     stringGenerator();
+    //replace the text on the website
     sentence.textContent = string;
-    //define the string
-
-
-//generate new strings
-//replace the text on the website
 }
 
 
@@ -60,5 +57,4 @@ function stringGenerator(){
     var n2 = Math.floor(Math.random()*nouns.length);
     var a = Math.floor(Math.random()*articles.length);
    string = pronouns[p] + " " + nouns[n1] + " " + verbs[v] + " " + articles[a] + " " + nouns[n2];
-    // string = n + " " + v + " " + n
 }
