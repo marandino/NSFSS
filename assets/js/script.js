@@ -3,6 +3,10 @@ var forfeit = document.getElementById('forfeit');
 var reset = document.getElementById('reset');
 var sentence = document.getElementById('sentence');
 var navbar = document.querySelectorAll('.navbar ul li');
+var about = document.querySelector('#about');
+var container = document.querySelector('.container');
+var back = document.getElementById('back');
+
 //define the string
 var string = '';
 //define the noun pool
@@ -409,8 +413,11 @@ var prepositions = [
 	'while thinking about'
 ];
 ////////////////////////////////
-
+//about button
 navbar[0].addEventListener('click', showAbout);
+///back button
+back.addEventListener('click', showContainer);
+
 navbar[1].addEventListener('click', customize);
 navbar[2].addEventListener('click', showRules);
 
@@ -437,8 +444,14 @@ function stringGenerator() {
 }
 
 function showAbout() {
-	alert('working');
 	//Show the About Page
+	container.classList.add('hide');
+	about.classList.remove('hide');
+}
+
+function showContainer() {
+	container.classList.remove('hide');
+	about.classList.add('hide');
 }
 function customize() {
 	alert('working 2');
