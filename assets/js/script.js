@@ -71,12 +71,12 @@ function showAbout() {
     //Show the About Page
 }
 function customize() {
-    alert("working");
+    alert("working 2");
     //shows a div in a higher Z axis, that lets the user 
     //define player 1
     //define player 2
 }
 function showRules() {
-    alert("working");
+    alert("working 3");
     //Show the Rules Page
 }
