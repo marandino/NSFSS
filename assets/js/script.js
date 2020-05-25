@@ -28,13 +28,7 @@ var pronouns = [
 
 //def. verb pool
 var verbs = [
-    "brings", 
-    "leaves", 
-    "lends",
-    "loves", 
-    "hates",
-    "fucks"
-]
+    'Bring', 'Lecture', 'Break', 'Toss', 'Walk', 'Boogie down on', 'Dance on', 'Dance with', 'Get busy with', 'Indoctrinate', 'Climb', 'Fall off of', 'Pretend you murdered', 'Move', 'Jiggle', 'Eat', 'Lick', 'Suck', 'Take apart', 'Fix', 'Color', 'Conceptualize', 'Teach', 'Inspire', 'Fight', 'Kiss', 'Smooch', 'Hug', 'Cuddle', 'Apologize to', 'Slap', 'Kick', 'Reorganize', 'Clean', 'Convert', 'Disorient', 'Confuse', 'Educate', 'Embellish', 'Exchange', 'Booty bump', 'Raise', 'Jump over', 'Jump on top of', 'Wear', 'Try on', 'Caress', 'Balance', 'Dig', 'Move', 'Bring', 'Give', 'Shove', 'Puppeteer ', 'Buy', 'Take', 'Steal', 'Pretend', 'Build', 'Get inside of', 'Get on top of', 'Draw', 'Paint', 'Have an epiphany because of', 'Pretend you just got horrible news regarding', 'Summon a demon with', 'Praise Jesus', 'Put', 'Shoot', 'Sling', 'Peek', 'Throw down with', 'Switch', 'Condescend ', 'Judge', 'Corroborate', 'Sanctify', 'Summon a demon for', 'Stretch', 'Stand on', 'Take', 'Abduct', 'Convince', 'Argue with', 'Drive', 'Turn', 'Decorate', 'Impersonate', ]
 // def article pool
 var articles = [
     "the",

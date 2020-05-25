@@ -23,6 +23,10 @@ body{
 
 .container h3 {
     margin-bottom: 2em;
+    text-transform: lowercase;
+}
+.container h3 {
+    text-transform: capitalize;
 }
 
 button{
