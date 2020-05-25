@@ -9,14 +9,14 @@ font-family: 'Permanent Marker', cursive; */
 body{
     background-color: #bf211eff;
     font-family: 'Chelsea Market', cursive;
-
+    margin: 0;
+    padding: 0;
 }
 
 .container{
     width: 70%;
     margin: auto;
     text-align: center;
-    margin-top: 2em;
     padding: 100px 0;
     color: #f7f7f7;
 }
@@ -41,7 +41,35 @@ button{
     min-width: 95px;
 }
 
-button:hover{
+
+button:active{
     color: #bf211eff;
     background-color: #f7f7f7;
+    transition-duration: .2s;
+}
+
+.navbar {
+    height: 50px;
+    margin: 0;
+    background-color: #46b1c9ff;
+    margin: auto;
+    margin-top: -16px;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+    padding: 0;
+}
+
+.navbar ul li{
+    color: #f7f7f7;
+    padding: 0 1em;
+}
+
+
+.navbar ul li:active{
+    background-color: #f7f7f7;
+    color: #001011ff;
 }

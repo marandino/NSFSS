@@ -1,7 +1,8 @@
 var completed = document.getElementById("completed");
 var forfeit = document.getElementById("forfeit");
-var reset = document.getElementById("reset")
+var reset = document.getElementById("reset");
 var sentence = document.getElementById("sentence");
+var about = document.querySelectorAll(".navbar ul li");
 
     //define the string
 var string = ""
@@ -32,13 +33,21 @@ var articles = [
     "my",
     "player 2's"
 ]
-
 var descriptor = [
     'silently', 'elegantly', 'effortlessly', 'stylishly', 'abhorrently', 'like you mean it', 'like you want it', "like it's going out of style", "like there's a shortage", "like you're dying tomorrow", 'like you forgot why you were doing it', "like you can't stand it", 'dressed like a cat', 'dressed as batman', 'with a smile', 'carefully', 'on top of a cat', 'on top of a dog', 'on top of the house', 'on top of your head', "on top of P3's head", "on top of a stranger's head", "on top of your doctor's head", 'without laughing', 'slyly', 'intelligently', 'quietly', 'deviously', 'surreptitiously ', 'vengefully', 'gleefully', 'violently', 'like a villian', 'maniacally', 'childishly', "like you're a billionaire", 'super fast', 'beautifully', 'condescendingly', 'just cause you can', 'cleverly', 'without touching the ground', 'in the rain', 'softly', 'viciously', 'madly', 'lovingly', 'thoughtfully', 'decoratively', 'somberly', 'while crying', 'without explaining why', 'with your eyes closed', 'like an idiot', 'in mime', 'like a fish', 'like a fox', "like you're happy about it", 'like an asshole', 'because you hate yourself', 'because you love life', 'because you gotta learn somehow', 'at night', 'at lunch', 'after sex', 'on a date', 'rudely', 'politely', 'coyly', 'squishily', "like you're on a cooking show", "like you're a really bad pornstar", "like you're a superhero", "like you know what's good for them", "if you know what's good for you", 'in a costume'
 ]
-
 var prepositions = [
     'on', 'with', 'on top of', 'inside of', 'around', 'underneath', 'outside of', 'through', 'next to', 'over', 'aboard', 'onto', 'above', 'under', 'among', 'to', 'toward', 'at', 'behind', 'below', 'beneath', 'beside', 'while watching', 'in', 'into', 'near', 'off', 'outside', 'over', 'while eating', 'while holding', 'while wearing', 'while pretending to be', 'with your hand in', 'while fearing', 'while talking about', 'while singing about', 'at', 'at', 'while yelling at', 'while yelling about', 'while staring at', 'while thinking about']
+////////////////////////////////
+
+
+completed.addEventListener("click", newString);
+
+reset.addEventListener("click", newString);
+
+
+
+
 function newString() { 
     //generate new strings
     stringGenerator();
