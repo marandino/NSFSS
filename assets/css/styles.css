@@ -78,14 +78,6 @@ button:active {
 	color: #001011ff;
 }
 
-/* #hal {
-	display: inline-block;
-	margin: auto;
-	margin-top: 5%;
-} */
-
-/* //define a bolded class */
-
 .bolded {
 	font-weight: 600;
 }

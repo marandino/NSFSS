@@ -469,7 +469,6 @@ function showContainer() {
 function customize() {
 	hideThemAll();
 	custom.classList.remove('hide');
-	//shows a div in a higher Z axis, that lets the user
 	//define player 1
 	//define player 2
 }
