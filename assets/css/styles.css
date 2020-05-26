@@ -10,7 +10,7 @@ font-family: 'Permanent Marker', cursive; */
 
 body {
 	background-color: #bf211eff;
-	font-family: 'Chelsea Market', cursive;
+	font-family: 'Tomorrow', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -28,15 +28,15 @@ body {
 	text-transform: lowercase;
 }
 .container h3 {
-	text-transform: capitalize;
+	text-transform: initial;
 }
 
 button {
-	font-family: 'Permanent Marker', cursive;
-	color: #001011ff;
+	font-family: 'Tomorrow', sans-serif;
+	color: #f7f7f7;
 	padding: 1em;
 	font-weight: 500;
-	background-color: #fde74cff;
+	background-color: #46b1c9ff;
 	outline: none;
 	border: none;
 	margin: .5em;
@@ -52,7 +52,7 @@ button:active {
 .navbar {
 	height: 50px;
 	margin: 0;
-	background-color: #46b1c9ff;
+	background-color: #001011ff;
 	margin: auto;
 	margin-top: -16px;
 }
@@ -95,14 +95,10 @@ button:active {
 }
 
 /* FADE IN - OUT EFFECTS */
-.show {
-	display: block;
-}
 
 .hide {
 	display: none;
 }
-
 /* UNDERSCORE ANIMATION */
 .underscore {
 	color: #f7f7f7;

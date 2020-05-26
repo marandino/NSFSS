@@ -2,7 +2,7 @@
 var completed = document.getElementById('completed');
 var forfeit = document.getElementById('forfeit');
 var reset = document.getElementById('reset');
-var back = document.getElementById('back');
+var back = document.querySelectorAll('.back');
 var navbar = document.querySelectorAll('.navbar ul li');
 //PAGE ELEMENTS
 var background = document.querySelector('body');
@@ -682,8 +682,10 @@ var prepositions = [
 navbar[0].addEventListener('click', showAbout);
 navbar[1].addEventListener('click', customize);
 navbar[2].addEventListener('click', showRules);
-///back button
-back.addEventListener('click', showContainer);
+///back buttons
+back[0].addEventListener('click', showContainer);
+back[1].addEventListener('click', showContainer);
+back[2].addEventListener('click', showContainer);
 //Game Buttons
 completed.addEventListener('click', newString);
 reset.addEventListener('click', newString);
