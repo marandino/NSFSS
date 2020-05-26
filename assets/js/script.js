@@ -454,14 +454,12 @@ function showAbout() {
 	//Show the About Page
 	container.classList.add('hide');
 	about.classList.remove('hide');
-	navContainer.classList.add('hide');
 	backColor(black);
 }
 
 function showContainer() {
 	container.classList.remove('hide');
 	about.classList.add('hide');
-	navContainer.classList.remove('hide');
 	backColor(red);
 }
 function customize() {
