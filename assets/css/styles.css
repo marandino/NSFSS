@@ -107,3 +107,8 @@ button:active {
 .hide {
 	display: none;
 }
+
+
+#underscore { color: #f7f7f7; white-space: pre-wrap; word-wrap: break-word; }
+#underscore:after { content: "_"; font-weight: bold; animation: blinking 1s step-end infinite; }
+@keyframes blinking { from, to { visibility: hidden; } 50% { visibility: visible; } }
