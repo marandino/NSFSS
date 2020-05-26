@@ -9,7 +9,7 @@
 font-family: 'Permanent Marker', cursive; */
 
 body {
-	background-color: #001011ff;
+	background-color: #bf211eff;
 	font-family: 'Chelsea Market', cursive;
 	margin: 0;
 	padding: 0;
@@ -78,32 +78,48 @@ button:active {
 	color: #001011ff;
 }
 
-/* #hal {
-	display: inline-block;
-	margin: auto;
-	margin-top: 5%;
-} */
-
-/* //define a bolded class */
-
 .bolded {
 	font-weight: 600;
 }
 
-#about {
+#about,
+#rules,
+#custom {
 	text-align: center;
 	max-width: 570px;
 	width: 70%;
 	margin: auto;
 	color: #f7f7f7;
-	margin-top: 5em;
+	margin-top: 2em;
 	background-image: "./assets/images/background.png";
 }
 
+/* FADE IN - OUT EFFECTS */
 .show {
 	display: block;
 }
 
 .hide {
 	display: none;
+}
+
+/* UNDERSCORE ANIMATION */
+.underscore {
+	color: #f7f7f7;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+.underscore:after {
+	content: "_";
+	font-weight: bold;
+	animation: blinking 1s step-end infinite;
+}
+@keyframes blinking {
+	from,
+	to {
+		visibility: hidden;
+	}
+	50% {
+		visibility: visible;
+	}
 }
