@@ -6,6 +6,7 @@ var navbar = document.querySelectorAll('.navbar ul li');
 var about = document.querySelector('#about');
 var container = document.querySelector('.container');
 var back = document.getElementById('back');
+var navContainer = document.querySelector(".navbar");
 
 //define the string
 var string = '';
@@ -447,11 +448,13 @@ function showAbout() {
 	//Show the About Page
 	container.classList.add('hide');
 	about.classList.remove('hide');
+	navContainer.classList.add("hide");
 }
 
 function showContainer() {
 	container.classList.remove('hide');
 	about.classList.add('hide');
+	navContainer.classList.remove("hide");
 }
 function customize() {
 	alert('Work in Progress');
