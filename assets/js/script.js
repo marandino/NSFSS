@@ -1,13 +1,19 @@
+//BUTTONS
 var completed = document.getElementById('completed');
 var forfeit = document.getElementById('forfeit');
 var reset = document.getElementById('reset');
-var sentence = document.getElementById('sentence');
-var navbar = document.querySelectorAll('.navbar ul li');
-var about = document.querySelector('#about');
-var container = document.querySelector('.container');
 var back = document.getElementById('back');
-var navContainer = document.querySelector('.navbar');
+var navbar = document.querySelectorAll('.navbar ul li');
+//PAGE ELEMENTS
 var background = document.querySelector('body');
+var navContainer = document.querySelector('.navbar');
+var sentence = document.getElementById('sentence');
+var container = document.querySelector('.container');
+var custom = document.querySelector('#custom');
+var about = document.querySelector('#about');
+var rules = document.getElementById('rules');
+var pages = [ about, rules, custom, container ];
+//COLORS
 var red = '#bf211eff';
 var black = '#001011ff';
 var yell = '#fde74cff';
@@ -419,26 +425,23 @@ var prepositions = [
 	'while staring at',
 	'while thinking about'
 ];
-////////////////////////////////
-//about button
+////EVENT LISTENERS
+//navbar buttons
 navbar[0].addEventListener('click', showAbout);
-///back button
-back.addEventListener('click', showContainer);
-
 navbar[1].addEventListener('click', customize);
 navbar[2].addEventListener('click', showRules);
-
+///back button
+back.addEventListener('click', showContainer);
+//Game Buttons
 completed.addEventListener('click', newString);
-
 reset.addEventListener('click', newString);
-
+//Gameplay Start
 function newString() {
 	//generate new strings
 	stringGenerator();
 	//replace the text on the website
 	sentence.textContent = string;
 }
-
 function stringGenerator() {
 	var p = Math.floor(Math.random() * pronouns.length);
 	var v = Math.floor(Math.random() * verbs.length);
@@ -449,31 +452,41 @@ function stringGenerator() {
 	var d = Math.floor(Math.random() * descriptor.length);
 	string = verbs[v] + ' ' + nouns[n1] + ' ' + prepositions[pp] + ' ' + nouns2[n2] + ' ' + descriptor[d];
 }
+//Gameplay End
 
+//Navbar Functionality
 function showAbout() {
 	//Show the About Page
-	container.classList.add('hide');
+	hideThemAll();
 	about.classList.remove('hide');
-	backColor(black);
 }
 
 function showContainer() {
+	hideThemAll();
 	container.classList.remove('hide');
-	about.classList.add('hide');
 	backColor(red);
 }
 function customize() {
-	alert('Work in Progress');
+	hideThemAll();
+	custom.classList.remove('hide');
 	//shows a div in a higher Z axis, that lets the user
 	//define player 1
 	//define player 2
 }
 function showRules() {
-	alert('STOP IT! Have Patience');
-	//Show the Rules Page
+	//Show the About Page
+	hideThemAll();
+	rules.classList.remove('hide');
 }
 
 function backColor(color) {
 	background.style.backgroundColor = color;
 	console.log(color);
 }
+
+function hideThemAll() {
+	for (let i = 0; i < pages.length; i++) {
+		pages[i].classList.add('hide');
+	}
+}
+//End of Navbar Functionality
