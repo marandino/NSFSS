@@ -454,12 +454,12 @@ function showContainer() {
 	about.classList.add('hide');
 }
 function customize() {
-	alert('working 2');
+	alert('Work in Progress');
 	//shows a div in a higher Z axis, that lets the user
 	//define player 1
 	//define player 2
 }
 function showRules() {
-	alert('working 3');
+	alert('STOP IT! Have Patience');
 	//Show the Rules Page
 }
