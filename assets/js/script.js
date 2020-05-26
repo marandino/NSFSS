@@ -6,7 +6,13 @@ var navbar = document.querySelectorAll('.navbar ul li');
 var about = document.querySelector('#about');
 var container = document.querySelector('.container');
 var back = document.getElementById('back');
-var navContainer = document.querySelector(".navbar");
+var navContainer = document.querySelector('.navbar');
+var background = document.querySelector('body');
+var red = '#bf211eff';
+var black = '#001011ff';
+var yell = '#fde74cff';
+var blue = '#46b1c9ff';
+var pink = ' #f00699ff ';
 
 //define the string
 var string = '';
@@ -448,13 +454,15 @@ function showAbout() {
 	//Show the About Page
 	container.classList.add('hide');
 	about.classList.remove('hide');
-	navContainer.classList.add("hide");
+	navContainer.classList.add('hide');
+	backColor(black);
 }
 
 function showContainer() {
 	container.classList.remove('hide');
 	about.classList.add('hide');
-	navContainer.classList.remove("hide");
+	navContainer.classList.remove('hide');
+	backColor(red);
 }
 function customize() {
 	alert('Work in Progress');
@@ -465,4 +473,9 @@ function customize() {
 function showRules() {
 	alert('STOP IT! Have Patience');
 	//Show the Rules Page
+}
+
+function backColor(color) {
+	background.style.backgroundColor = color;
+	console.log(color);
 }
