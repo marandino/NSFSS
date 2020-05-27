@@ -1,6 +1,7 @@
 /* 
 #001011ff
 #bf211eff
+#bf211eff
 #fde74cff
 #46b1c9ff
 #f00699ff 
@@ -33,10 +34,11 @@ body {
 
 button {
 	font-family: 'Tomorrow', sans-serif;
-	color: #f7f7f7;
+	color: #001011ff;
 	padding: 1em;
 	font-weight: 500;
-	background-color: #46b1c9ff;
+	/* background-color: rgb(233, 124, 0); */
+	background-color: #fde74cff;
 	outline: none;
 	border: none;
 	margin: .5em;
@@ -52,7 +54,7 @@ button:active {
 .navbar {
 	height: 50px;
 	margin: 0;
-	background-color: #001011ff;
+	background-color: rgba(133, 12, 10, 0.877);
 	margin: auto;
 	margin-top: -16px;
 }
