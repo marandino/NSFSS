@@ -69,10 +69,10 @@ button:active {
 	justify-content: space-evenly;
 	line-height: 50px;
 	padding: 0;
+	color: #f7f7f7;
 }
 
 .navbar ul li {
-	color: #f7f7f7;
 	padding: 0 1em;
 }
 
@@ -91,7 +91,8 @@ button:active {
 
 #about,
 #rules,
-#custom {
+#custom,
+#ideas {
 	text-align: center;
 	max-width: 570px;
 	width: 70%;
@@ -125,4 +126,17 @@ button:active {
 	50% {
 		visibility: visible;
 	}
+}
+
+/* alinging vertically the about and the custom pages */
+#readme {
+	padding: 0;
+	padding-bottom: 3em;
+}
+#readme h2 {
+	margin-top: -10px;
+}
+
+#custom {
+	padding: 20% 0;
 }
