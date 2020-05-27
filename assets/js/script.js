@@ -19,7 +19,9 @@ var black = '#001011ff';
 var yell = '#fde74cff';
 var blue = '#46b1c9ff';
 var pink = ' #f00699ff ';
-
+//Variables for Functions
+var lyricalIndex = '1';
+var lyrics = [ 'Gimme Gimme Gimme', 'A man after midnight', "Won't somebody help me", 'Chase the shadows away' ];
 //define the string
 var string = '';
 //define the noun pool
@@ -687,7 +689,7 @@ back[0].addEventListener('click', showContainer);
 back[1].addEventListener('click', showContainer);
 back[2].addEventListener('click', showContainer);
 //Game Buttons
-completed.addEventListener('click', newString);
+// completed.addEventListener('click', newString); this is not in use yet
 reset.addEventListener('click', newString);
 //Gameplay Start
 function newString() {
@@ -695,6 +697,7 @@ function newString() {
 	stringGenerator();
 	//replace the text on the website
 	sentence.textContent = string;
+	lyricalButton();
 }
 function stringGenerator() {
 	var p = Math.floor(Math.random() * pronouns.length);
@@ -743,3 +746,12 @@ function hideThemAll() {
 	}
 }
 //End of Navbar Functionality
+
+//text on button will change every time you click it
+function lyricalButton() {
+	reset.textContent = lyrics[lyricalIndex];
+	lyricalIndex++;
+	if (lyricalIndex === lyrics.length) {
+		lyricalIndex = 0;
+	}
+}
