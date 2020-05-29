@@ -131,6 +131,7 @@ button:active {
 /* alinging vertically the about and the custom pages */
 #readme {
 	padding: 0;
+	max-width: 570px;
 	padding-bottom: 3em;
 }
 #readme h2 {
