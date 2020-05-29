@@ -141,3 +141,9 @@ button:active {
 #custom {
 	padding: 100px 0;
 }
+
+hr {
+	max-width: 80%;
+	background-color: #f7f7f7;
+	border-color: #f7f7f7;
+}
